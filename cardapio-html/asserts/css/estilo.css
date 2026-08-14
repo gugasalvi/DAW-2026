@@ -1,0 +1,19 @@
+:root {
+    --bg: wheat;
+}
+
+header {
+
+    background-color: #1c120c;
+    color: wheat;
+}
+
+p{
+   color:wheat;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
