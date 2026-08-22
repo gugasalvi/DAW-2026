@@ -1,15 +1,17 @@
 :root {
-    --bg: wheat;
+    --bg: white;
+    --text: #000000;
+    --text-muted: #78716c;
 }
 
 header {
 
     background-color: #ffffff;
-    color: black;
+    color: var(--text);
 }
 
 p{
-   color:black;
+   color: var(--text);
 }
 
 *{
@@ -20,12 +22,29 @@ p{
 body{ border: 3px solid red;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    color:black;
-    background-color: #ffffff;
+    color: var(--text);
+    background-color: var(--bg);
 }
+
+.container {
+    width: min(100%, 1200px);
+    margin-inline: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Cabeçalho */
 header {
-    background-color: #ffffff;
-    
+    background-color: var(--bg);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
 }
 header .brand {
     display: flex;
@@ -44,7 +63,7 @@ header .brand h1 {
 header .brand p {
     margin-top: 2px;
     font-size: 0.8rem;
-    color: #78716c
+    color: var(--text-muted);
 }
 header .cart-button {
     display: flex;
@@ -59,4 +78,15 @@ header .cart-button {
 header .cart-button img {
     width: 1.25rem;
     height: 1.25rem;
+}
+
+footer {
+    background-color: var(--text-muted);
+    color: var(--text);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    padding-block: 1.5rem;
+    width: 1200px;
+    margin-inline: auto;
 }
