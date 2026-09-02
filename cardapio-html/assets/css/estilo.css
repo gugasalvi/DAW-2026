@@ -225,6 +225,35 @@ section article button {
     margin-right: 1rem;
 }
 
+main aside {
+    align-self: start;
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    background-color: #ffffff;
+    box-shadow: 0 10px 26px rgb(36 33 31 / 8%);
+}
+main aside h2 {
+    font-size: 1rem;
+    padding: 1rem;
+}
+main aside .cart-empty {
+    text-align: center;
+    padding-block: 2rem 1rem;
+    border-top: 1px solid var(--border);
+}
+main aside .cart-empty p:first-of-type {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 0.6rem;
+}
+main aside .cart-empty p:last-of-type {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+
 /* Footer 
 FOOTER
 */
