@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./assets/css/estilo.css">
+    
 </head>
 
 <body>
@@ -43,7 +43,7 @@
         <section>
             <header>
                 <h2>Produtos</h2>
-                <p>10 itens</p>
+                <p>Categoria <span id="selected-category">Todos</span> - 10 itens</p>
             </header>
             <article>
                 <figure>
@@ -58,7 +58,7 @@
 
             <article>
                 <figure>
-                    <img src="./assets/img/burger-bacon.png" alt="Bancon Burger">
+                    <img src="./assets/img/burger-bacon.png" alt="Burger-bacon">
                     <figcaption>Lanches</figcaption>
                 </figure>
                 <h3>Bacon Burger</h3>
@@ -69,7 +69,7 @@
 
             <article>
                 <figure>
-                    <img src="./assets/img/burger-double.png" alt="Duplo Burguer">
+                    <img src="./assets/img/burger-double.png" alt="Burger-double">
                     <figcaption>Lanches</figcaption>
                 </figure>
                 <h3>Duplo Burguer</h3>
@@ -79,78 +79,71 @@
             </article>
             <article>
                 <figure>
-                    <img src="./assets/img/batata-rustica.png" alt="Batata Rústica">
+                    <img src="./assets/img/batata-rustica.png" alt="batata-rustica">
                     <figcaption>Porções</figcaption>
                 </figure>
                 <h3>Batata Rústica</h3>
-                <p>Batata frita crocante com queijo derretido e temperos especiais.</p>
+                <p> Porção de batata com alecrim, parmesão e maionese verde.</p>
                 <p>R$ 18,00</p>
                 <button type="button">Adicionar</button>
             </article>
-
             <article>
                 <figure>
-                    <img src="./assets/img/batata-tradicional.png" alt="Batata Tradicional">
+                    <img src="./assets/img/batata-tradicional.png" alt="batata-tradicional">
                     <figcaption>Porções</figcaption>
                 </figure>
-                <h3>Batata Tradicional</h3>
-                <p>Porção de batata e maionese verde.</p>
+                <h3> Batata Tradicional</h3>
+                <p> Porção de batata e maionese verde.</p>
                 <p>R$ 15,00</p>
                 <button type="button">Adicionar</button>
             </article>
-
             <article>
                 <figure>
-                    <img src="./assets/img/agua.png" alt="Água">
+                    <img src="./assets/img/agua.png" alt="água sem gás">
                     <figcaption>Bebidas</figcaption>
                 </figure>
-                <h3>Água</h3>
-                <p>Água mineral 500ml.</p>
+                <h3> Água Sem Gás</h3>
+                <p> Garrafa descartável de água sem gás com 500 ml.</p>
                 <p>R$ 8,00</p>
                 <button type="button">Adicionar</button>
             </article>
-
             <article>
                 <figure>
-                    <img src="./assets/img/refri.png" alt="Refrigerante">
+                    <img src="./assets/img/refri.png" alt="refrigerante">
                     <figcaption>Bebidas</figcaption>
                 </figure>
-                <h3>Refrigerante</h3>
-                <p>Refrigerante 300ml.</p>
+                <h3> Refrigerante 300 ml</h3>
+                <p> Copo de refrigerante de 300 ml.</p>
                 <p>R$ 10,00</p>
                 <button type="button">Adicionar</button>
             </article>
-
             <article>
                 <figure>
-                    <img src="./assets/img/chopp.png" alt="Chopp">
+                    <img src="./assets/img/chopp.png" alt="chopp">
                     <figcaption>Bebidas</figcaption>
                 </figure>
-                <h3>Chopp</h3>
-                <p>Chopp 300ml.</p>
+                <h3> Chopp 300 ml</h3>
+                <p> Copo de chopp de 300 ml.</p>
                 <p>R$ 15,00</p>
                 <button type="button">Adicionar</button>
             </article>
-
-
             <article>
                 <figure>
-                    <img src="./assets/img/petit-gateau.png" alt="Petit Gâteau">
+                    <img src="./assets/img/petit-gateau.png" alt="petit gateau">
                     <figcaption>Sobremesas</figcaption>
                 </figure>
-                <h3>Petit Gâteau</h3>
-                <p>Petit Gâteau de Chocolate.</p>
+                <h3> Petit Gateau</h3>
+                <p> Petit Gateau com uma bola de sorvete de creme.</p>
                 <p>R$ 25,00</p>
                 <button type="button">Adicionar</button>
             </article>
-
             <article>
                 <figure>
-                    <img src="./assets/img/mousse-maracuja.png" alt="Mousse de Maracujá">
+                    <img src="./assets/img/mousse-maracuja.png" alt="mousse de maracujá">
                     <figcaption>Sobremesas</figcaption>
                 </figure>
-                <h3>Mousse de Maracujá</h3>
-                <p>Mousse de Maracujá com cobertura de chocolate.</p>
+                <h3> Mousse de Maracujá</h3>
+                <p> Mousse de maracujá feito com a fruta de verdade.</p>
                 <p>R$ 18,00</p>
                 <button type="button">Adicionar</button>
             </article>
@@ -158,11 +151,10 @@
 
         <aside>
             <h2>Seu Pedido</h2>
-
             <div class="cart-empty">
-                <img src="./assets/img/cart.svg" alt="Carrinho Vazio">
+                <img src="./assets/img/cart.svg" alt="Carrinho vazio">
                 <p>Seu carrinho está vazio</p>
-                <p>Escolha um item do cardápio para começar</p>
+                <p>Escolha um item do cardápio para começar.</p>
             </div>
         </aside>
     </main>
@@ -173,7 +165,7 @@
             <p>Rua Mato Grosso, 200 - Pato Branco - PR</p>
         </div>
     </footer>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
