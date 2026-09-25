@@ -1,21 +1,16 @@
 const categoryLinks = document.querySelectorAll('nav a');
-
-console.log(categoryLinks);
-console.log('Category Links');
+const selectedCategory = document.getElementById('selected-category');
 
 categoryLinks.forEach(function(link) {
     link.addEventListener('click', function(event) {
         event.preventDefault();
 
-        const categoryName = link.textContent;
-
-        selectedCategory.textContent = categoryName;
-
-        alert('Categoria selecionada: ' + categoryName);
+        selectedCategory.textContent = link.textContent;
 
         categoryLinks.forEach(function(categoryLink) {
             categoryLink.classList.remove('active');
         });
+
         link.classList.add('active');
     });
 });
