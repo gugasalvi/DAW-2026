@@ -2,19 +2,23 @@ import { Footer } from "./components/layouts/footer"
 import { Header } from "./components/layouts/header"
 import { NavigationBar } from "./components/layouts/navigation"
 import { categories } from "./data/categories";
+import { useState } from "react";
 
 
 function App() {
+
+    const [activeCategory, setActiveCategory] = useState<string>('todos');
     function handleSelectCategory(alias: string) {
-        alert(`Categoria selecionada: ${alias}`);
+        setActiveCategory(alias);
     }
+
     return (
         <>
             <Header />
 
             <NavigationBar
                 categories={categories}
-                activeCategory="porcoes"
+                activeCategory={activeCategory}
                 onSelectCategory={handleSelectCategory}
             />
 
@@ -22,7 +26,7 @@ function App() {
                 <section>
                     <header>
                         <h2>Produtos</h2>
-                        <p>Categoria <span id="selected-category">Todos</span> - 10 itens</p>
+                        <p>Categoria <span id="selected-category">{ activeCategory }</span> - 10 itens</p>
                     </header>
                     <article>
                         <figure>
